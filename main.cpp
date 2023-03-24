@@ -92,7 +92,6 @@ good to go!
  */
 
 #include <iostream>
-
 struct FloatType
 {
     float add( float lhs, float rhs );
@@ -188,7 +187,6 @@ if(rhs==0) {
 }
 return lhs / rhs;    
 }
-
 
 int main() 
 {
