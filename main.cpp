@@ -118,74 +118,77 @@ struct IntType
 
 float FloatType::add(float lhs, float rhs)
 {
-return lhs + rhs;    
+    return lhs + rhs;    
 }
 
 float FloatType::subtract(float lhs, float rhs)
 {
-return lhs - rhs;    
+    return lhs - rhs;    
 }
 
 float FloatType::multiply(float lhs, float rhs)
 {
-return lhs * rhs;    
+    return lhs * rhs;    
 }
 
 float FloatType::divide(float lhs, float rhs)
 {
-if(rhs==0.0f) {
-    std::cout<<std::endl<<"warning, floating point division by zero returns 'inf' !"<<std::endl;
-}
-return lhs / rhs;    
+    if(rhs==0.0f) 
+    {
+        std::cout<<std::endl<<"warning, floating point division by zero returns 'inf' !"<<std::endl;
+    }
+    return lhs / rhs;    
 }
 
 
 double DoubleType::add(double lhs, double rhs)
 {
-return lhs + rhs;    
+    return lhs + rhs;    
 }
 
 double DoubleType::subtract(double lhs, double rhs)
 {
-return lhs - rhs;    
+    return lhs - rhs;    
 }
 
 double DoubleType::multiply(double lhs, double rhs)
 {
-return lhs * rhs;    
+    return lhs * rhs;    
 }
 
 double DoubleType::divide(double lhs, double rhs)
 {
-if(rhs==0.0) {
-    std::cout<<std::endl<<"warning, floating point division by zero returns 'inf' !"<<std::endl;
-}
-return lhs / rhs;    
+    if(rhs==0.0) 
+    {
+        std::cout<<std::endl<<"warning, floating point division by zero returns 'inf' !"<<std::endl;
+    }
+    return lhs / rhs;    
 }
 
 int IntType::add(int lhs, int rhs)
 {
-return lhs + rhs;    
+    return lhs + rhs;    
 }
 
 int IntType::subtract(int lhs, int rhs)
 {
-return lhs - rhs;    
+    return lhs - rhs;    
 }
 
 int IntType::multiply(int lhs, int rhs)
 {
-return lhs * rhs;    
+    return lhs * rhs;    
 }
 
 int IntType::divide(int lhs, int rhs)
 {
-if(rhs==0) {
-    std::cout<<" error, integer division by zero will crash the program!"<<std::endl;
-    std::cout<<"returning lhs"<<std::endl;
-    return lhs;
-}
-return lhs / rhs;    
+    if(rhs==0) 
+    {    
+        std::cout<<" error, integer division by zero will crash the program!"<<std::endl;
+        std::cout<<"returning lhs"<<std::endl;
+        return lhs;
+    }
+    return lhs / rhs;    
 }
 
 int main() 
